@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import PersonalForm from './components/PersonalForm'
+import EducationForm from './components/EducationForm'
 import Resume from './components/Resume'
 
 function App() {
@@ -12,8 +13,7 @@ function App() {
     schoolDate: '',
     company: '',
     position: '',
-    startDate: '',
-    endDate: ''
+    jobDate: ''
   })
 
   function handleChange(e) {
@@ -26,6 +26,7 @@ function App() {
     <>
       <div className="forms">
         <PersonalForm data={data} onChange={handleChange}/>
+        <EducationForm data={data} onChange={handleChange}/>
       </div>
       <Resume data={data} />
     </>
