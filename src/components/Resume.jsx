@@ -1,7 +1,13 @@
 function Resume({data}) {
   return (
     <div className='resume'>
-      {data.name} {data.email} {data.phone}
+      <div className="personal">
+        {data.name} {data.email} {data.phone} 
+      </div>
+      <div className="education">
+        {data.school} {data.major} {data.schoolDate}
+      </div>
+      
     </div>
   )
 }
