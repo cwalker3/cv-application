@@ -7,6 +7,9 @@ function Resume({data}) {
       <div className="education">
         {data.school} {data.major} {data.schoolDate}
       </div>
+      <div className="experience">
+        {data.company} {data.position} {data.jobDate}
+      </div>
       
     </div>
   )
