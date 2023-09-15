@@ -1,8 +1,8 @@
-function Resume() {
+function Resume({data}) {
   return (
-    <>
-    
-    </>
+    <div className='resume'>
+      {data.name} {data.email} {data.phone}
+    </div>
   )
 }
 

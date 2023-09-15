@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import PersonalForm from './components/PersonalForm'
+import Resume from './components/Resume'
 
 function App() {
   const [data, setData] = useState({
@@ -19,13 +20,14 @@ function App() {
     const key = e.target.id;
     const newValue = e.target.value;
     setData({...data, [key]: newValue})
-    console.log(data)
   }
 
   return (
     <>
-      <PersonalForm data={data} onChange={handleChange}/>
-      
+      <div className="forms">
+        <PersonalForm data={data} onChange={handleChange}/>
+      </div>
+      <Resume data={data} />
     </>
   )
 }

@@ -1,1 +1,17 @@
+* {
+  box-sizing: border-box;
+}
 
+#root {
+  display: flex;
+}
+
+.forms {
+  flex: 1;
+}
+  
+
+.resume {
+  flex: 1;
+  border: 2px solid black;
+}
