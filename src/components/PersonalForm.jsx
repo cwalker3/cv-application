@@ -1,6 +1,7 @@
 function PersonalForm({data, onChange}) {
   return (
     <form>
+      <h1>Personal Info</h1>
       <div className="input-container">
         <label htmlFor='name'>Full Name</label>
         <input type="text" id='name' value={data.name} onChange={onChange}/>

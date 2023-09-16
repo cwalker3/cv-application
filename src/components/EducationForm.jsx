@@ -1,6 +1,7 @@
 function EducationForm({data, onChange}) {
   return (
     <form>
+      <h1>Education</h1>
       <div className="input-container">
         <label htmlFor='school'>School</label>
         <input type="text" id='school' value={data.school} onChange={onChange}/>
